@@ -10,6 +10,10 @@
   </head>
 
   <body>
+    <nav>
+      <%= link_to("Home", root_path)%>
+      <%= link_to("New Note", new_note_path)%>
+    </nav>
     <%= yield %>
   </body>
 </html>
