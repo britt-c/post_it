@@ -1,0 +1,7 @@
+<% notes.each do |note| %>
+  <div class="note-pad">
+    <p><%= note.body %></p>
+    <date><%= note.created_at.to_s(:short) %></date>
+  </div>
+<% end %>
+
