@@ -5,5 +5,4 @@ class PagesController < ApplicationController
   def index
     @notes = Note.limit(13).order(created_at: :desc)
   end
-
 end
